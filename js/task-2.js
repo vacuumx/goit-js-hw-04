@@ -1,5 +1,8 @@
 "use strict";
 function calcAverageCalories(days){
+  if (days.length===0) {
+    return 0;
+  }
     let average = 0;
     for (const day of days) {
         average+=day.calories;
